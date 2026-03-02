@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, li{
+    margin: 20px;
+    padding: 35px;
+    border: 1px solid black;
+}
+
+header nav a{
+    text-decoration: none;
+}
+
+header .texto-blanco{
+    background-color: rgb(98, 12, 12);
+}
+
+.texto-blanco, .texto-blanco a{
+    color: white;
+    font-size: 30px;
+}
+
+:root{
+    --color-principal-verde: #006634;
+    --color-principal-naranja: #ed6615;
+    --fondo-secciones-claro: #efece3;
+    --fuente-titulos: ;
+    --tamaño-titulos: 35px;
+    --margenes-entre-bloques: 100px;
+    
+}
