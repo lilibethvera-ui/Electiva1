@@ -18,5 +18,42 @@
 
 header{
     background-color: var(--color-fondo-principal);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.logo img{
+    height: 100px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-direction: row;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--color-texto-principal);
+    font-family: var(--fuente-titulos);
+    font-weight: 600;
+}
+
+.boton-pedir a{
+    text-decoration: none;
+    background-color: #d59b8d;
+    width: 200px;
+    height: 40px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgb(rgb(221, 131, 131));
 }
 
