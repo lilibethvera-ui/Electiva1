@@ -161,7 +161,7 @@ nav ul li a:hover {
     justify-content: center;
     gap: 60px;               /* Espacio entre texto y tarjetas */
     width: 100%;
-    max-width: 1400px;       /* Límite para que no se pegue a los bordes en pantallas Pro */
+    max-width: 1400px;       /* Límite para que no se pegue a los bordes */
     margin-bottom: 60px;
 }
 
@@ -193,7 +193,7 @@ nav ul li a:hover {
 .rollos-productos {
     flex: 2;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas fijas como en tu imagen */
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas fijas */
     gap: 25px;
 }
 
@@ -208,7 +208,7 @@ nav ul li a:hover {
 .rollo-producto img {
     width: 100%;
     height: auto;
-    max-height: 180px;
+    max-height: 200px;
     object-fit: contain;
     margin-bottom: 15px;
 }

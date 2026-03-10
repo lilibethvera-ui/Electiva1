@@ -1,0 +1,145 @@
+/* Tipografía técnica y limpia */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --bg-soft: #f4f2f8;        /* Gris con un toque lila muy leve */
+    --lila-main: #9d8dbd;      /* Lila serio, no chillón */
+    --lila-dark: #6e5e8d;      /* Violeta profundo para textos */
+    --lila-light: #eaddff;     /* Lila pastel para acentos */
+    --card-bg: #ffffff;
+    --text-main: #3d344d;
+    --border-color: #e2e0e9;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--bg-soft);
+    color: var(--text-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura fija para evitar scroll */
+    overflow: hidden; /* Evita el scroll en el cuerpo */
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 360px; /* Más estrecho para ser compacto */
+}
+
+h1 {
+    font-size: 0.75rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--lila-main);
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.ejercicio {
+    background-color: var(--card-bg);
+    padding: 20px 25px; /* Padding reducido */
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(157, 141, 189, 0.15);
+    border: 1px solid var(--border-color);
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: var(--lila-dark);
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+p {
+    font-size: 0.75rem;
+    color: #8a8494;
+    text-align: center;
+    margin-bottom: 15px; /* Espacio reducido */
+    line-height: 1.3;
+}
+
+/* Campos de entrada compactos */
+.input-group {
+    margin-bottom: 12px;
+}
+
+label {
+    display: block;
+    font-size: 0.75rem;
+    margin-bottom: 4px;
+    font-weight: 600;
+    color: var(--lila-main);
+}
+
+input {
+    width: 100%;
+    border: 1px solid var(--border-color);
+    padding: 10px 12px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    background-color: #fcfcff;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--lila-main);
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(157, 141, 189, 0.1);
+}
+
+/* Botón sólido y serio */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--lila-main);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: var(--lila-dark);
+}
+
+/* Resultados integrados */
+.resultado {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid var(--bg-soft);
+    text-align: center;
+}
+
+.resultado h3 {
+    font-size: 0.7rem;
+    color: #aaa4b3;
+    text-transform: uppercase;
+}
+
+#valorImc {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--lila-dark);
+    margin: 2px 0;
+}
+
+#categoriaImc {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--lila-main);
+    font-style: italic;
+}
+
